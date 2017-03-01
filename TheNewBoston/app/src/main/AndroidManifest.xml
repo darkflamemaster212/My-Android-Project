@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.darkflamemaster.thenewboston">
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".StartingPoint"
+            android:label="Starting Point"
+            >
+            <intent-filter>
+                <action android:name="com.darkflamemaster.thenewboston.StartingPoint"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Menu">
+            <intent-filter>
+                <action android:name="com.darkflamemaster.thenewboston.Menu"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TextPlay"
+            android:label="Text Play"
+            >
+        </activity>
+        <activity
+            android:name=".Email"
+            android:label="Hate Mail"
+            >
+        </activity>
+        <activity
+            android:name=".Camera"
+            android:label="Set Wallpaper"
+            >
+        </activity>
+    </application>
+
+</manifest>
